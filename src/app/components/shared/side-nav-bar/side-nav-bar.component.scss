@@ -1,0 +1,97 @@
+.main {
+  // width: 200px;
+}
+
+.example-container {
+  height: calc(100vh * 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color:  rgb(2, 44, 56)
+  
+}
+.example-sidenav-content {
+ 
+}
+.example-sidenav {
+  user-select: none;
+  background-color:  rgb(19, 94, 117)
+} 
+.full-width {
+  width: 100%;
+}
+.menu-button {
+  transition: 5200ms ease-in-out;
+  transform: rotate(0deg);
+  
+}
+.menu-button.rotated {
+  transform: rotate(180deg);
+}
+.submenu {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 60px;
+}
+.submenu.expanded {
+  transform: scaleY(1);
+}
+
+.nav-header {
+  width: 280px;
+  height: 330px;
+  background-color: rgb(13, 63, 78);
+
+
+  .nav-header-image {
+    margin: auto;
+    width: inherit;
+    height: 216px;
+    background-image: url("https://previews.123rf.com/images/dzein/dzein1509/dzein150900022/45072948-travel-and-tourism-background-with-famous-world-landmarks-in-3d-realistic-and-sketch-drawing-element.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .details {
+    margin-top: -50px;
+    width: inherit;
+    height: 150px;
+    align-self: center;
+    color: white;
+    // background-color: rgba(59, 19, 19, 0.76);
+
+
+    .prof-pic-logo {
+      width: inherit;
+      height: inherit;
+      background-image: url("https://media-exp1.licdn.com/dms/image/C5603AQHACeKIMOjKhA/profile-displayphoto-shrink_800_800/0?e=1594857600&v=beta&t=j0PAprzgbOtOvXDiTFGUvm7wPc9T-ZpOfY3IPik7RJc");
+      background-size: cover;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      z-index: 3;
+    }
+
+    .prof-pic-boarder {
+      width: 80px;
+      height: 80px;
+      background-color: rgb(13, 63, 78);
+      background-size: cover;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      padding: 4px;
+    
+    }
+  }
+}
+
+.nav-item{
+
+  // background-color: rgb(13, 63, 78);
+  color: white;
+  font-size: small;
+
+
+}

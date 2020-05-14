@@ -1,0 +1,7 @@
+<mat-toolbar  class="example-toolbar custom-toolbar" *ngIf="true">
+  <button mat-icon-button (click)="changeState()">
+    <mat-icon *ngIf="!isExpanded">menu</mat-icon>
+    <mat-icon *ngIf="isExpanded">close</mat-icon>
+  </button>
+  <h1 class="example-app-name">Travello Home</h1>
+</mat-toolbar>

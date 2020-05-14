@@ -1,0 +1,77 @@
+<mat-sidenav-container class="example-container" autosize>
+
+
+  <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
+    (mouseleave)="mouseleave()">
+
+    <div class="nav-header" *ngIf="isExpanded || isShowing">
+
+      <div class="nav-header-image"></div>
+
+      <div class="details" fxLayout="column" fxLayoutAlign="end center" fxLayoutGap="8px">>
+
+        <div class="prof-pic-boarder">
+          <div class="prof-pic-logo">
+          </div>
+        </div>
+
+
+        <div>Dinalie Liyanage</div>
+        <div>bhagyafdo97@gmail.com</div>
+        
+
+
+      </div>
+
+
+    </div>
+
+
+    <mat-nav-list>
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent nav-item" >
+        <mat-icon  mat-list-icon>home</mat-icon>
+        <span class="full-width" *ngIf="isExpanded || isShowing" >  Home</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent nav-item">
+        <span class="full-width" *ngIf="isExpanded || isShowing">  Schedules</span>
+        <mat-icon mat-list-icon>assignment</mat-icon>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent nav-item">
+        <span class="full-width" *ngIf="isExpanded || isShowing">  Dashboard</span>
+        <mat-icon mat-list-icon>dashboard</mat-icon>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent nav-item">
+        <span class="full-width" *ngIf="isExpanded || isShowing">  Settings</span>
+        <mat-icon mat-list-icon>settings</mat-icon>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent nav-item">
+        <span class="full-width" *ngIf="isExpanded || isShowing">  Notification</span>
+        <mat-icon mat-list-icon matBadge="15" matBadgeColor="warn">  notification_important</mat-icon>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+     
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <div class="example-sidenav-content">
+
+    <router-outlet></router-outlet>
+
+
+  </div>
+
+</mat-sidenav-container>
